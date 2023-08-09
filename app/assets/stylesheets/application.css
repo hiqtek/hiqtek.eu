@@ -14,11 +14,30 @@
  *= require_self
  */
 
+body {
+    background-color: rgb(11,11,11);
+    padding: 0;
+    margin: 0;
+}
+
 #main-box {
     min-height: 100vh;
+}
 
+#mobile-box {
+    min-height: 100vh;
+    display: none;
 }
 
 .message {
     margin: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #mobile-box {
+        display: inline;
+    }
+    #main-box {
+        display: none;
+    }
 }
